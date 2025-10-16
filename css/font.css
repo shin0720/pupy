@@ -1,0 +1,14 @@
+@charset "utf-8";
+@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+@font-face {
+    font-family: 'Cafe24Surround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+.spoqa{
+    font-family: 'SpoqaHanSans-kr'
+}
+.surround{
+    font-family: 'Cafe24Surround';
+}

@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+@media(max-width:1440px){
+    .container1 {
+        width: 100%;
+    }
+    .container2 {
+        width: 100%;
+    }
+}

@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강아지 프로필</title>
+ 
+    <link rel="stylesheet" href="./css/sub/substyle.css">
+
+
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="container1 clearfix">
+            <div class="header">
+                <div class="header_logo">
+                    <a href="./index.html"><img src="./image/logo.png" alt="로고이미지"></a>
+                </div>
+                <nav class="header_nav">
+                    <ul>
+                        <li><a href="./sub_1.html">강아지프로필</a></li>
+                        <li><a href="./sub_2.html">추천 동물병원</a></li>
+                        <li><a href="./sub_3.html">실종 강아지찾기</a></li>
+                    </ul>
+                </nav>
+                <nav class="header_mbnav"></nav>
+            </div>
+        </div>
+    </header>
+    <section id="banner">
+        <div class="container">
+            <div class="banner">
+                <div id="dog_lottie" style="width:300px;height:300px;margin:0 auto;margin-top: 50px;"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </section>
+    <section id="profile_player" class="player">
+        <div class="container1">
+            <div class="card">
+                <h2 class="title">강아지 찐친을 만들어보아요!</h2>
+                <div class="stage">
+                    <!-- Prev / Next 한 쌍 -->
+                    <button class="nav prev" id="feedPrev" aria-label="이전"></button>
+                    <button class="nav next" id="feedNext" aria-label="다음"></button>
+
+
+                    <div class="viewport" id="feedViewport">
+                        <article class="post" data-id="kong" data-likes="11">
+                            <div class="frame">
+                                <img src="./image/con2_dog1.jpg" alt="콩이">
+
+                                <div class="overlay">
+                                    <button class="icon like" aria-pressed="false">
+                                        <span class="count">11</span>
+                                        <img src="./image/sub1/heart.png" alt="하트이미지">
+                                        <p>좋아요</p>
+                                    </button>
+                                    <button class="icon chat" data-name="콩이">
+                                        <img src="./image/sub1/massege.png" alt="메세지보내기">
+                                        <p>메세지</p>
+                                    </button>
+                                </div>
+                                <div class="caption">
+                                    <h3>콩이</h3>
+                                    <p class="meta">남아 · 11살</p>
+                                    <p class="desc">하얀색 강아지는 언제나 환영!</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="post" data-id="tina" data-likes="5">
+                            <div class="frame">
+                                <img src="./image/con2_dog2.jpg" alt="티나">
+
+                                <div class="overlay">
+                                    <button class="icon like" aria-pressed="false">
+                                        <span class="count">5</span>
+                                        <img src="./image/sub1/heart.png" alt="하트이미지">
+                                        <p>좋아요</p>
+
+                                    </button>
+                                    <button class="icon chat" data-name="티나">
+                                        <img src="./image/sub1/massege.png" alt="메세지보내기">
+                                        <p>메세지</p>
+                                    </button>
+                                </div>
+                                <div class="caption">
+                                    <h3>티나</h3>
+                                    <p class="meta">남아 · 1살</p>
+                                    <p class="desc">친구는 모두 좋아요^^</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="post" data-id="bomy" data-likes="15">
+                            <div class="frame">
+                                <img src="./image/con2_dog3.jpg" alt="봄이">
+
+                                <div class="overlay">
+                                    <button class="icon like" aria-pressed="false">
+                                        <span class="count">15</span>
+                                        <img src="./image/sub1/heart.png" alt="하트이미지">
+                                        <p>좋아요</p>
+                                    </button>
+                                    <button class="icon chat" data-name="콩이">
+                                        <img src="./image/sub1/massege.png" alt="메세지보내기">
+                                        <p>메세지</p>
+                                    </button>
+                                </div>
+                                <div class="caption">
+                                    <h3>봄이</h3>
+                                    <p class="meta">여아 · 4살</p>
+                                    <p class="desc">소심하지만 친구 만들고싶어요!</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="post" data-id="geny" data-likes="10">
+                            <div class="frame">
+                                <img src="./image/con2_dog4.jpg" alt="제니">
+
+                                <div class="overlay">
+                                    <button class="icon like" aria-pressed="false">
+                                        <span class="count">10</span>
+                                        <img src="./image/sub1/heart.png" alt="하트이미지">
+                                        <p>좋아요</p>
+                                    </button>
+                                    <button class="icon chat" data-name="콩이">
+                                        <img src="./image/sub1/massege.png" alt="메세지보내기">
+                                        <p>메세지</p>
+                                    </button>
+                                </div>
+                                <div class="caption">
+                                    <h3>제니</h3>
+                                    <p class="meta">여아 · 6살</p>
+                                    <p class="desc">간식 같이 먹을 멍멍이 구함</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="post" data-id="zeri" data-likes="17">
+                            <div class="frame">
+                                <img src="./image/con2_dog5.jpg" alt="제리">
+
+                                <div class="overlay">
+                                    <button class="icon like" aria-pressed="false">
+                                        <span class="count">17</span>
+                                        <img src="./image/sub1/heart.png" alt="하트이미지">
+                                        <p>좋아요</p>
+                                    </button>
+                                    <button class="icon chat" data-name="콩이">
+                                        <img src="./image/sub1/massege.png" alt="메세지보내기">
+                                        <p>메세지</p>
+                                    </button>
+                                </div>
+                                <div class="caption">
+                                    <h3>제리</h3>
+                                    <p class="meta">남아 · 7살</p>
+                                    <p class="desc">내마음대로 가는대로~</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="post" data-id="tan" data-likes="12">
+                            <div class="frame">
+                                <img src="./image/con2_dog6.jpg" alt="탄이">
+
+                                <div class="overlay">
+                                    <button class="icon like" aria-pressed="false">
+                                        <span class="count">12</span>
+                                        <img src="./image/sub1/heart.png" alt="하트이미지">
+                                        <p>좋아요</p>
+                                    </button>
+                                    <button class="icon chat" data-name="콩이">
+                                        <img src="./image/sub1/massege.png" alt="메세지보내기">
+                                        <p>메세지</p>
+                                    </button>
+                                </div>
+                                <div class="caption">
+                                    <h3>탄이</h3>
+                                    <p class="meta">남아 · 5살</p>
+                                    <p class="desc">나는 친구는 다좋아♥</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="post" data-id="choimono" data-likes="16">
+                            <div class="frame">
+                                <img src="./image/con2_dog7.jpg" alt="최모노">
+
+                                <div class="overlay">
+                                    <button class="icon like" aria-pressed="false">
+                                        <span class="count">16</span>
+                                        <img src="./image/sub1/heart.png" alt="하트이미지">
+                                        <p>좋아요</p>
+                                    </button>
+                                    <button class="icon chat" data-name="콩이">
+                                        <img src="./image/sub1/massege.png" alt="메세지보내기">
+                                        <p>메세지</p>
+                                    </button>
+                                </div>
+                                <div class="caption">
+                                    <h3>최모노</h3>
+                                    <p class="meta">남아 · 3살</p>
+                                    <p class="desc">애교매력 넘치는 인기쟁이스타</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="post" data-id="star" data-likes="6">
+                            <div class="frame">
+                                <img src="./image/con2_dog8.jpg" alt="별이">
+
+                                <div class="overlay">
+                                    <button class="icon like" aria-pressed="false">
+                                        <span class="count">6</span>
+                                        <img src="./image/sub1/heart.png" alt="하트이미지">
+                                        <p>좋아요</p>
+                                    </button>
+                                    <button class="icon chat" data-name="콩이">
+                                        <img src="./image/sub1/massege.png" alt="메세지보내기">
+                                        <p>메세지</p>
+                                    </button>
+                                </div>
+                                <div class="caption">
+                                    <h3>별이</h3>
+                                    <p class="meta">여아 · 1살</p>
+                                    <p class="desc">도도한 나! 그래도 친구 만들래</p>
+                                </div>
+                            </div>
+                        </article>
+
+
+                    </div>
+                </div>
+
+                <!-- 메시지 모달 -->
+                <dialog id="msgDialog">
+                    <form id="msgForm" method="dialog">
+                        <h3 id="msgTo">👉 메시지 보내기</h3>
+                        <textarea id="msgInput" rows="4" placeholder="메시지를 입력하세요"></textarea>
+                        <div class="dialog-actions">
+                            <button value="cancel" class="btn ghost">취소</button>
+                            <button id="msgSend" class="btn">보내기</button>
+                        </div>
+                    </form>
+                </dialog>
+            </div>
+        </div>
+    </section>
+    <section id="profile">
+        <div class="container1">
+            <div class="profile">
+                <h3 class="title">내소개할게
+                    <img src="./image/sub1/sub1_title.png" alt="타이틀 문구박스">
+                    
+                </h3>
+                <article>
+                    <div class="box s1">
+                        <div class="profile">
+                            <div class="image">
+                                <img src="./image/con2_dog1.jpg" alt="콩이">
+                            </div>
+                            
+                            <div class="text">
+                                    <strong>이름: <span>콩이</span></strong>
+                                    <strong>나이: <span>11살</span></strong>
+                                    <strong>성별: <span>남아</span></strong>
+                                    <strong>각오: <span>친구는 언제나 환영해^^</span></strong>
+                            </div>
+                            <span class="buttun">
+                                채팅하기
+                            </span>
+                        </div>
+                    </div>
+                    <div class="box s2">
+                        <div class="profile">
+                            <div class="image">
+                                <img src="./image/con2_dog2.jpg" alt="콩이">
+                            </div>
+                            
+                            <div class="text">
+                                    <strong>이름: <span>티나</span></strong>
+                                    <strong>나이: <span>1살</span></strong>
+                                    <strong>성별: <span>남아</span></strong>
+                                    <strong>각오: <span>사람도 좋아하고 강아지도 좋아!</span></strong>
+                            </div>
+                            <span class="buttun">
+                                채팅하기
+                            </span>
+                        </div>
+                    </div>
+                    <div class="box s3">
+                        <div class="profile">
+                            <div class="image">
+                                <img src="./image/con2_dog3.jpg" alt="콩이">
+                            </div>
+                            
+                            <div class="text">
+                                    <strong>이름: <span>봄이</span></strong>
+                                    <strong>나이: <span>4살</span></strong>
+                                    <strong>성별: <span>여아</span></strong>
+                                    <strong>각오: <span>낯가림은 있지만 산책좋아요~</span></strong>
+                            </div>
+                            <span class="buttun">
+                                채팅하기
+                            </span>
+                        </div>
+                    </div>
+                    <div class="box s4">
+                        <div class="profile">
+                            <div class="image">
+                                <img src="./image/con2_dog4.jpg" alt="콩이">
+                            </div>
+                            
+                            <div class="text">
+                                    <strong>이름: <span>제니</span></strong>
+                                    <strong>나이: <span>6살</span></strong>
+                                    <strong>성별: <span>여아</span></strong>
+                                    <strong>각오: <span>나는 강아지보다 사람이 좋아!</span></strong>
+                            </div>
+                            <span class="buttun">
+                                채팅하기
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="box s5">
+                        <div class="profile">
+                            <div class="image">
+                                <img src="./image/con2_dog5.jpg" alt="콩이">
+                            </div>
+                            
+                            <div class="text">
+                                    <strong>이름: <span>제리</span></strong>
+                                    <strong>나이: <span>7살</span></strong>
+                                    <strong>성별: <span>남아</span></strong>
+                                    <strong>각오: <span>오로지 난 직진이야!</span></strong>
+                            </div>
+                            <span class="buttun">
+                                채팅하기
+                            </span>
+                        </div>
+                    </div>
+                    <div class="box s6">
+                        <div class="profile">
+                            <div class="image">
+                                <img src="./image/con2_dog6.jpg" alt="콩이">
+                            </div>
+                            
+                            <div class="text">
+                                    <strong>이름: <span>탄이</span></strong>
+                                    <strong>나이: <span>5살</span></strong>
+                                    <strong>성별: <span>남아</span></strong>
+                                    <strong>각오: <span>친구 좋아하는 사교쟁이^^</span></strong>
+                            </div>
+                            <span class="buttun">
+                                채팅하기
+                            </span>
+                        </div>
+                    </div>
+                    <div class="box s7">
+                        <div class="profile">
+                            <div class="image">
+                                <img src="./image/con2_dog7.jpg" alt="콩이">
+                            </div>
+                            
+                            <div class="text">
+                                    <strong>이름: <span>최모노</span></strong>
+                                    <strong>나이: <span>3살</span></strong>
+                                    <strong>성별: <span>남아</span></strong>
+                                    <strong>각오: <span>애교매력 넘치는 인기쟁이스타</span></strong>
+                            </div>
+                            <span class="buttun">
+                                채팅하기
+                            </span>
+                        </div>
+                    </div>
+                    <div class="box s8">
+                        <div class="profile">
+                            <div class="image">
+                                <img src="./image/con2_dog8.jpg" alt="콩이">
+                            </div>
+                            
+                            <div class="text">
+                                    <strong>이름: <span>별이</span></strong>
+                                    <strong>나이: <span>1살</span></strong>
+                                    <strong>성별: <span>여아</span></strong>
+                                    <strong>각오: <span>도도한 비숑. 엄마껌딱지</span></strong>
+                            </div>
+                            <span class="buttun">
+                                채팅하기
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="box s9">
+                        <div class="profile">
+                            <div class="image">
+                                <img src="./image/con2_dog9.jpg" alt="티슈">
+                            </div>
+                            
+                            <div class="text">
+                                    <strong>이름: <span>티슈</span></strong>
+                                    <strong>나이: <span>1살</span></strong>
+                                    <strong>성별: <span>남아</span></strong>
+                                    <strong>각오: <span>사람, 동물 다 좋아하고 활발함</span></strong>
+                            </div>
+                            <span class="buttun">
+                                채팅하기
+                            </span>
+                        </div>
+                    </div>
+                    <div class="box s10">
+                        <div class="profile">
+                            <div class="image">
+                                <img src="./image/con2_dog10.jpg" alt="봄이">
+                            </div>
+                            
+                            <div class="text">
+                                    <strong>이름: <span>봄이</span></strong>
+                                    <strong>나이: <span>4살</span></strong>
+                                    <strong>성별: <span>여아</span></strong>
+                                    <strong>각오: <span>사람좋아하고 안아주는거 선호함!</span></strong>
+                            </div>
+                            <span class="buttun">
+                                채팅하기
+                            </span>
+                        </div>
+                    </div>
+                    <div class="box s11">
+                        <div class="profile">
+                            <div class="image">
+                                <img src="./image/con2_dog11.jpg" alt="두부">
+                            </div>
+                            
+                            <div class="text">
+                                    <strong>이름: <span>두부</span></strong>
+                                    <strong>나이: <span>7살</span></strong>
+                                    <strong>성별: <span>여아</span></strong>
+                                    <strong>각오: <span>겁이 많고 남자 안좋아함</span></strong>
+                            </div>
+                            <span class="buttun">
+                                채팅하기
+                            </span>
+                        </div>
+                    </div>
+                    <div class="box s12">
+                        <div class="profile">
+                            <div class="image">
+                                <img src="./image/con2_dog12.jpg" alt="둥이">
+                            </div>
+                            
+                            <div class="text">
+                                    <strong>이름: <span>둥이</span></strong>
+                                    <strong>나이: <span>8살</span></strong>
+                                    <strong>성별: <span>남아</span></strong>
+                                    <strong>각오: <span>치와와들의 대장!</span></strong>
+                            </div>
+                            <span class="buttun">
+                                채팅하기
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="box s13">
+                        <div class="profile">
+                            <div class="image">
+                                <img src="./image/con2_dog13.jpg" alt="티나">
+                            </div>
+                            
+                            <div class="text">
+                                    <strong>이름: <span>티나</span></strong>
+                                    <strong>나이: <span>12살</span></strong>
+                                    <strong>성별: <span>여아</span></strong>
+                                    <strong>각오: <span>나는 동안외모! 친구좋아</span></strong>
+                            </div>
+                            <span class="buttun">
+                                채팅하기
+                            </span>
+                        </div>
+                    </div>
+                    <div class="box s14">
+                        <div class="profile">
+                            <div class="image">
+                                <img src="./image/con2_dog14.jpg" alt="이슬">
+                            </div>
+                            
+                            <div class="text">
+                                    <strong>이름: <span>이슬</span></strong>
+                                    <strong>나이: <span>12살</span></strong>
+                                    <strong>성별: <span>여아</span></strong>
+                                    <strong>각오: <span>엄마품이 제일 좋아요</span></strong>
+                            </div>
+                            <span class="buttun">
+                                채팅하기
+                            </span>
+                        </div>
+                    </div>
+                    <div class="box s15">
+                        <div class="profile">
+                            <div class="image">
+                                <img src="./image/con2_dog15.jpg" alt="쿠키">
+                            </div>
+                            
+                            <div class="text">
+                                    <strong>이름: <span>쿠키</span></strong>
+                                    <strong>나이: <span>3살</span></strong>
+                                    <strong>성별: <span>남아</span></strong>
+                                    <strong>각오: <span>산책은 나의 힘!</span></strong>
+                            </div>
+                            <span class="buttun">
+                                채팅하기
+                            </span>
+                        </div>
+                    </div>
+                    <div class="box s16">
+                        <div class="profile">
+                            <div class="image">
+                                <img src="./image/con2_dog16.jpg" alt="호돌이">
+                            </div>
+                            
+                            <div class="text">
+                                    <strong>이름: <span>호돌이</span></strong>
+                                    <strong>나이: <span>2살</span></strong>
+                                    <strong>성별: <span>남아</span></strong>
+                                    <strong>각오: <span>친구 해줄꺼야?</span></strong>
+                            </div>
+                            <span class="buttun">
+                                채팅하기
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+      <img src="./image/foot_line.png" alt="푸터라인" class="cloud" />
+      <div class="container1">
+        <div class="footer">
+          <div class="footer_logo">
+            <a href="./index.html">
+              <img src="./image/foot_logo.png" alt="푸터로고" />
+            </a>
+          </div>
+          <div class="footer_inner">
+            <div class="footer_menu">
+              <ul>
+                <li><a href="javascript">회사소개</a></li>
+                <li><a href="javascript">개인정보 처리방침</a></li>
+                <li><a href="javascript">이용약관</a></li>
+                <li><a href="javascript">고객센터</a></li>
+              </ul>
+            </div>
+            <div class="footer_address">
+              <em>서울특별시 강서구 화곡로 133 삼정빌딩 3층</em> <br />
+              <span>대표자: 신미현</span> <br />
+              <span>사업자번호: 102-05-12345</span>
+            </div>
+            <div class="footer_copy">
+              <p>Copyright 2025.pupylink All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+<svg width="0" height="0" style="position:absolute">
+  <filter id="rough-stroke">
+    <feTurbulence type="fractalNoise" baseFrequency="0.025" numOctaves="1" seed="3" result="noise"/>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script src="./js/subjs/sub_content1.js"></script>
+
+</body>
+
+</html>
