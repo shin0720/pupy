@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+#content1 {
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.content1 {
+  text-align: center;
+}
+
+.title {
+  padding-top: 5px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: var(--main_font);
+  color: #333;
+}
+
+.title img {
+  width: 50px;
+  height: 50px;
+}
+
+.lose {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  min-height: 450px;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.lose_box {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.6s ease;
+  justify-content: flex-start;
+  width: max-content;
+}
+
+.box {
+  flex: 0 0 300px;
+  min-width: 300px;
+}
+
+.lose_box .box {
+  margin-top: 30px;
+  width: 300px;
+  border: 3px solid var(--black);
+  border-radius: 20px;
+  padding: 20px;
+  background: var(--main_color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lose_box .box .image {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.lose_box .box .image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.lose_box .box .notice {
+  width: 100%;
+  text-align: left;
+}
+
+.lose_box .box .notice strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.lose_box .box .notice strong span {
+  font-weight: 500;
+  color: #666;
+}
+
+.scroll_indicator {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.scroll_indicator img {
+  width: 70px;
+  height: 70px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease-out;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#content2 {
+  padding: 40px 0;
+}
+
+.content2 {
+  text-align: center;
+}
+
+.tab {
+  margin: 50px 0;
+}
+
+.tab ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tab ul li {
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  padding: 3px;
+  cursor: pointer;
+  background-color: #d6d0d0;
+  box-shadow: 3px 4px 2px 0px #666;
+  transition: all 0.3s ease;
+}
+
+.tab ul li:hover {
+  transform: translateY(-2px);
+  box-shadow: 3px 6px 4px 0px #555;
+}
+
+.tab ul li.active {
+  background-color: rgb(4, 138, 82);
+}
+
+.tab ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.adoption_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+/* 🔽 각 카드 크기 */
+.adoption_item {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* 영상 비율 유지 */
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+
+/* 🔽 iframe이 항상 위로 덮이는 문제 방지 */
+.adoption_item iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  position: relative;
+  z-index: 1; /* 오버레이보다 아래에 위치 */
+}
+
+.adoption_item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+.adoption_info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+height: 40%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.35s ease;
+  z-index: 2;
+  pointer-events: none; /* 클릭 방해 방지 */
+}
+
+.adoption_item:hover .adoption_info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* hover 시 살짝 확대 */
+.adoption_item:hover {
+  transform: scale(1.02);
+}
+
+.adoption_item:hover .adoption_info {
+  transform: translateY(0);
+}
+
+/* 더보기 버튼 스타일 */
+.more_btn_wrap {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.more_btn {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: rgb(4, 138, 82);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.more_btn:hover {
+  background-color: rgb(3, 110, 65);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.more_btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.adoption_item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+
+

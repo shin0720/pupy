@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+
+#banner{}
+#content{}
+.banner{
+    width: 100%;
+    height: 300px;
+}
+.content{
+    width: 100%;
+    height: inherit;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+.content .sub_title{
+    margin: 50px 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    padding-left: 35%;
+    /* background-color: black; */
+}
+.content .sub_title .sub_icon{
+    width: 7vh;
+    height: 4vw;
+    display: inline;
+}
+.content .sub_title p{
+    font-size: 2.5vw;
+    font-family: var(--main_font);
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.content .button{
+    width: 100%;
+}
+.content .button ul{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+.content .button ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    font-family: var(--sub_font);
+    font-size: 1.2vw;
+    /* background-color: blueviolet; */
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+.content .button ul li::before{
+    content: "";
+    background-image: url(/image/sub2/sub1_menu.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 70px;
+    z-index: -1;
+    margin-left: 5%;
+}
+.content .button ul li.active::before{
+    background-image: url(/image/sub2/sub1_menu2.png);
+}
+
+
+/* box */
+.content .box{
+    width: 100%;
+    margin-top: 100px;
+}
+.content .box article{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* 박스 간격 일정 */
+}
+.content .box .inner_box{
+    width: 48%;
+    height: auto;
+    padding: 20px;
+    display: inline-block;
+    border: 3px solid var(--black);
+    border-radius: 20px;
+    flex: 0 0 calc(50% - 20px); 
+    display: block;             
+    margin-right: 0;   
+}
+.content .box .inner_box:nth-of-type(2n){
+    margin-right: 0;
+}
+/* 병원안에 이미지와 글 가로나열 */
+.content .box .inner_box .hospital{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content .box .inner_box .inner_img{
+    width: 45%;
+}
+.content .box .inner_box .inner_notice{
+    text-align: left;
+    width: 55%;
+    margin-left: 20px;
+    position: relative;
+    padding-left: 20px;
+}
+.content .box .inner_box .inner_notice::before{
+    content: "";
+    width: 4px;
+    height: 100%;
+    background-color: var(--black);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+.content .box .inner_box .inner_notice strong{
+    font-family: var(--sub_font);
+    font-size: 1.1em;
+}
+.content .box .inner_box .inner_notice strong span{
+    font-weight: 400;
+}
+.content .box .inner_box .inner_notice strong em{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9em;
+    
+}
+.content .box .inner_box .inner_notice p{
+    margin-top: 30px;
+    text-align: center;
+    color: #333;
+}
+
+
+.content .more{
+    width: 100%;
+    height: 70px;
+    /* background-color: rebeccapurple; */
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+    
+}
+.content .more .more_btn{
+    width: 200px;
+    height: 100%;
+    background-image: url(../../image/sub2/button.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.content .more .more_btn:hover{
+    background-image: url(../../image/sub2/button_2.png);
+}
+
+
+
+
+
+
+
+
+
+
+
